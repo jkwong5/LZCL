@@ -1,0 +1,66 @@
+body {
+font-family: arial;
+background-image: url("../128-174.jpg");
+background-repeat: repeat;
+padding: 0 5% 5% 5%;
+}
+
+h4{
+  font-family: monospace;
+}
+
+fieldset{
+  border-style: none;
+}
+
+li{
+  left: 10px;
+}
+
+.threeCol{
+  column-count: 3;
+}
+
+.threeCol:last-child{
+  font-size: .5em;
+  text-align: center;
+}
+
+.twoCol{
+  display: inline-block;
+  width: 100%;
+}
+
+.left{
+  float: left;
+  width: 49%;
+}
+
+.right{
+  float: right;
+  width: 49%;
+}
+
+.box{
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+.btn{
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 20px 2px 20px;
+  font-size: 1em;
+  margin:auto;
+}
+
+.result{
+  margin: auto;
+  width: 80%;
+}
+
+.letter{
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+}
