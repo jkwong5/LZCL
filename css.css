@@ -21,7 +21,7 @@ li{
   column-count: 3;
   -webkit-column-count: 3;
   -moz-column-count: 3;
-  line-height: 150%;
+  line-height: 125%;
 }
 
 .threeCol:last-child{
