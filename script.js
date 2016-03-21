@@ -1,5 +1,3 @@
-alert("Hello");
-
 function blankCheck(){
 
 var error = "";
