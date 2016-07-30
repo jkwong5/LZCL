@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lazy CL</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div>
+    <h1 align="center">Cover Letter Builder</h1>
+    <p>Fill in your information below and we will automatically place your information into a cover letter template!</p>
+    <p>No account required! For any questions please contact jkwong5@gmail.com</p>
+  </div>
+  <div>
+    <h4> Step 1: Fill in Basic Information </h4>
+    <form method="post" action="#" onsubmit="return blankCheck()" class="box">
+      <div class="threeCol">
+      <fieldset>
+        <label>First name:<br>
+          <input type="text" id="fname" name="fname">
+        </label><br>
+        <label>Last name:<br>
+          <input type="text" id="lname" name="lname">
+        </label><br>
+        <label>E-Mail:<br>
+          <input type="email" id="email" name="email">
+        </label><br>
+      </fieldset><br><br>
+      <fieldset>
+        <label>Street address:<br>
+          <input type="text" id="sname" name="sname">
+        </label><br>
+        <label>City:<br>
+          <input type="text" id="city" name="city">
+        </label><br>
+        <label>State:<br>
+          <input type="text" id="state" name="state" maxlength="2" style="text-transform: uppercase;">
+        </label><br>
+        <label>Zip:<br>
+          <input type="number" id="zip" name="zip" maxlength="5">
+        </label><br>
+      </fieldset><br>
+      <fieldset>
+        <label>Recruiter Name:<br>
+          <input type="text" id="recruiter" name="recruiter">
+        </label><br>
+        <label>Company Name:<br>
+          <input type="text" id="cname" name="cname">
+        </label><br>
+        <label>Desired Role:<br>
+          <input type="text" id="role" name="role">
+        </label><br>
+        <label>Current Position:<br>
+          <input type="text" id="pos" name="pos">
+        </label><br>
+      </fieldset><br>
+    </div>
+      <input type="submit" value="Submit" align="center" class="btn">
+    </form>
+  </div>
+  <br>
+<!--
+<form method="post" action="#" class="skill">
+    <div>Skills:<br>
+      <input type="text" name="inputs[]"><br>
+    </div><br>
+      <input type="button" value="Add Skills" onclick="addSkill('skillInput')">
+</form> /-->
+  <div class="twoCol">
+    <div class="left">
+      <h4> Step 2: Add your skills </h4>
+      <form method="post" action="#" class="box">
+        <fieldset>
+          <label>Skills:<br>
+            <input type="text" name="skill" id="skill">
+          </label><br>
+        </fieldset>
+            <input type="button" value="Add" onclick="skillFunction()" class="btn">
+      </form>
+    </div>
+    <div class="right">
+      <h4> Step 3: Last Job Experience </h4>
+      <form method="post" action="#" class="box">
+        <fieldset>
+          <label>Description:<br>
+            <input type="text" name="exp" id="exp" size="50">
+          </label><br>
+        </fieldset>
+            <input type="button" value="Add" onclick="expFunction()" class="btn">
+      </form>
+    </div>
+  </div>
+  <br>
+
+  <br>
+  <div class="result">
+    <h4> Cover Letter Result </h4>
+    <div contenteditable="true" id="headerResult" class="letter">
+      <a id="fullName"></a><br>
+      <a id="eMail"></a><br>
+      <a id="street"></a><br>
+      <a id="country"></a><br>
+      <br>
+
+      <p>Dear <a id="salutation"></a></p>
+
+      <p>
+        I'd love to get in touch with you as I am seeking opportunities in the role of <a id="desired"></a>. I am currently looking for a position in which I am able to utilize my skills in <a id="skillInput"></a>.  These are just a skills that <a id="company"></a> may find beneficial.
+      </p>
+      <p>
+        In my position as <a id="current"></a>, I have natural problem solving skills and a great communicator. There are several responsibilities that I managed but are not limited to:
+        <ul id="experience"></ul>
+      </p>
+      <p>I hope you find my candidacy fitting for this role. Attached is my resume.  The company culture and high industry focus of <a id="companys"></a> is what I desire the most.  I'd love to get in touch, even if it is just informational.
+      </p>
+      <p>
+        Thank you very much for your time, I look forward to your reply.
+      </p>
+      <p> Sincerely,</p>
+      <p id="signature"></p>
+
+    </div>
+  </div>
+  <br>
+
+<!--footer/-->
+  <div id="footer" class="threeCol">
+    <p>Created by: Jonathan Wong</p>
+    <p>E-mail: <a href="mailto:jkwong5@gmail.com?Subject=Regarding%20EZCL">jkwong5@gmail.com</a></p>
+    <p>2016</p>
+  </div>
+</body>
+</html>
